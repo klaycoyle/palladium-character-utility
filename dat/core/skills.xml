@@ -1,0 +1,156 @@
+<Skills>
+    <SkillCategoryList>
+        <!-- Categories with multiple names can be referred to by any of their names -->
+        <!-- This is to improve compatibility with other mods. -->
+        <SkillCategory Name="Communications;Performing Arts" />
+        <SkillCategory Name="Domestic" />
+        <SkillCategory Name="Espionage" />
+        <SkillCategory Name="Horsemanship" />
+        <SkillCategory Name="Medical" />
+        <SkillCategory Name="Military" />
+        <SkillCategory Name="Physical" />
+        <SkillCategory Name="Rogue;Thief" />
+        <SkillCategory Name="Science" />
+        <SkillCategory Name="Scholar;Noble;Technical" />
+        <SkillCategory Name="Weapon Proficiencies;WP;W.P." />
+        <SkillCategory Name="Wilderness;Wild" />
+    </SkillCategoryList>
+    <SkillList>
+        <!-- Multiple Category Skills -->
+        <Skill Name="Pick Locks"    Categories="Espionage;Rogue" Base="30" PlusPerLevel="5" />
+        <Skill Name="Pick Pockets"  Categories="Espionage;Rogue" Base="25" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Palming" Bonus="5" />
+        </Skill>
+        <Skill Name="Dance;Dancing" Categories="Communications;Domestic" Base="30" PlusPerLevel="5" ProfessionalQualityAttainable="true" />
+        <Skill Name="Sing;Singing"  Categories="Communications;Domestic" Base="30" PlusPerLevel="5" ProfessionalQualityAttainable="true" />
+        <Skill Name="Play Musical Instrument;Play Instrument" Categories="Communications;Domestic" Base="25" PlusPerLevel="5" ProfessionalQualityAttainable="true" MultipleChoice="true;INPUT" />
+        <!-- Communications -->
+        <Skill Name="Cryptography" Categories="Communications" Base="15" PlusPerLevel="5" />
+        <Skill Name="Language"     Categories="Communications" MultipleChoice="true;SELECT" >
+            <SkillChoice Choice="Dwarven"        Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Elven"          Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Faerie Speak"   Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Giantese"       Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Gobblely"       Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Eastern Human"  Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Southern Human" Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Northern Human" Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Western Human"  Base="40" PlusPerLevel="5" />
+            <SkillChoice Choice="Wolfen Human"   Base="30" PlusPerLevel="5" >
+                <SkillBonus Source="RACE:Wolfen;RACE:Coyle;RACE:Kankoran;RACE:Bearmen;RACE:Algor;CLASS:Ranger" Bonus="10" />
+            </SkillChoice>
+        </Skill>
+        <Skill Name="Literacy" Categories="Communications" MultipleChoice="true;SELECT" >
+            <SkillChoice Choice="Dwarven"        Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Elven"          Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Eastern Human"  Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Southern Human" Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Northern Human" Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Western Human"  Base="30" PlusPerLevel="5" />
+            <SkillChoice Choice="Wolfen"         Base="25" PlusPerLevel="5" >
+                <SkillBonus Source="CLASS:Diabolist" Bonus="5" />
+            </SkillChoice>
+        </Skill>
+        <Skill Name="Mime" Categories="Communications" Base="30" PlusPerLevel="5" >
+            <Requirement Requires="SKILL:Prowl;SKILL:Sign Language" />
+        </Skill>
+        <Skill Name="Public Speaking" Categories="Communications" Base="30" PlusPerLevel="5" />
+        <Skill Name="Sign Language"   Categories="Communications" Base="25" PlusPerLevel="5" />
+        <Skill Name="Write;Writing"   Categories="Communications" Base="20" PlusPerLevel="5" ProfessionalQualityAttainable="true" >
+            <Requirement Requires="SKILL:Literacy" />
+        </Skill>
+        <!-- Domestic Skills -->
+        <Skill Name="Cook;Cooking" Categories="Domestic"  Base="30" PlusPerLevel="5" ProfessionalQualityAttainable="true" />
+        <Skill Name="Fish;Fishing" Categories="Domestic"  Base="30" PlusPerLevel="5" ProfessionalQualityAttainable="true" />
+        <Skill Name="Sew;Sewing"   Categories="Domestic"  Base="30" PlusPerLevel="5" ProfessionalQualityAttainable="true" >
+            <SkillBonus Source="SKILL:Skin and Prepare Animal Hides" Bonus="5" />
+        </Skill>
+        <!-- Espionage Skills -->
+        <Skill Name="Detect Ambush" Categories="Espionage" Base="30" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Serveillance" Bonus="5" />
+        </Skill>
+        <Skill Name="Detect Concealment and Traps" Categories="Espionage" Base="25" PlusPerLevel="5" />
+        <Skill Name="Disguise"                     Categories="Espionage" Base="25" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Serveillance" Bonus="5" />
+        </Skill>
+        <Skill Name="Forgery"                      Categories="Espionage" Base="25" PlusPerLevel="5" >
+    		<SkillBonus Source="SKILL:Heraldry" Bonus="2" />
+    		<SkillBonus Source="SKILL:Art"      Bonus="3" />
+    	</Skill>
+        <Skill Name="Imitate Voices;Impersonation" Categories="Espionage" Base="36;16" PlusPerLevel="4;4" >
+            <SkillBonus Source="SKILL:Serveillance" Bonus="5" />
+        </Skill>
+        <Skill Name="Intelligence" Categories="Espionage" Base="25" PlusPerLevel="4"  >
+    		<SkillBonus Source="SKILL:Heraldry" Bonus="2" />
+    	</Skill>
+        <Skill Name="Sniper"       Categories="Espionage" >
+    		<Special DisplayArea="Combat" Text="Aimed Shot: +2 to Strike. Counts as two arrow shots." />
+    	</Skill>
+        <Skill Name="Track Humanoids"        Categories="Espionage"    Base="25"    PlusPerLevel="5" />
+        <!-- Horsemanship Skills -->
+        <Skill Name="Horsemanship: General"  Categories="Horsemanship" Base="35;25" PlusPerLevel="5;5" />
+        <Skill Name="Horsemanship: Knight"   Categories="Horsemanship" Base="40;30" PlusPerLevel="5;5" />
+        <Skill Name="Horsemanship: Palladin" Categories="Horsemanship" Base="45;40" PlusPerLevel="5;5" />
+        <Skill Name="Horsemanship: Exotic"   Categories="Horsemanship" Base="30;20" PlusPerLevel="5;5" />
+        <!-- Medical Skills -->
+        <Skill Name="Animal Husbandry" Categories="Medical" Base="35"    PlusPerLevel="5" />
+        <Skill Name="Biology"          Categories="Medical" Base="30"    PlusPerLevel="5" />
+        <Skill Name="Brewing"          Categories="Medical" Base="25;30" PlusPerLevel="5;5" >
+            <SkillBonus Source="SKILL:Holistic Medicine" Bonus="10" />
+        </Skill>
+        <Skill Name="First Aid"              Categories="Medical" Base="30"    PlusPerLevel="5" />
+        <Skill Name="Holistic Medicine"      Categories="Medical" Base="30;20" PlusPerLevel="5;5" />
+        <Skill Name="Surgeon;Medical Doctor" Categories="Medical" Base="30;20" PlusPerLevel="5;5" >
+            <Requirement Requires="SKILL:Biology" />
+        </Skill>
+        <!-- Military Skills -->
+        <Skill Name="Camouflage"    Categories="Military" Base="20" PlusPerLevel="5" />
+        <Skill Name="Falconry"      Categories="Military" Base="30" PlusPerLevel="5" />
+        <Skill Name="Field Armorer" Categories="Military" Base="30" PlusPerLevel="5" />
+        <Skill Name="Heraldry"      Categories="Military" Base="15;20" PlusPerLevel="5;5" >
+            <SkillBonus Source="SKILL:Intelligence" Bonus="5;5" />
+        </Skill>
+        <Skill Name="Interrogation Techniques" Categories="Military" Base="20" PlusPerLevel="5" />
+        <Skill Name="Military Etiquette"       Categories="Military" Base="35" PlusPerLevel="5" />
+        <Skill Name="Recognize Weapon Quality" Categories="Military" Base="25" PlusPerLevel="5" />
+        <Skill Name="Surveillance"             Categories="Military" Base="25" PlusPerLevel="5" />
+        <!-- Physical Skills -->
+        <TODO Physical="true" />
+        <!-- Rogue;Thief Skills -->
+        <Skill Name="Card Shark"  Categories="Rogue" Base="24" PlusPerLevel="4" >
+            <SkillBonus Source="SKILL:Palming" Bonus="5" />
+        </Skill>
+        <Skill Name="Concealment"                          Categories="Rogue" Base="20" PlusPerLevel="4" />
+        <Skill Name="Locate Secret Compartments and Doors" Categories="Rogue" Base="15" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Carpentry" Bonus="5" />
+            <SkillBonus Source="SKILL:General Repair;SKILL:Field Armorer" Bonus="5" />
+        </Skill>
+        <Skill Name="Palming"    Categories="Rogue" Base="20" PlusPerLevel="5" />
+        <Skill Name="Prowl"      Categories="Rogue" Base="25" PlusPerLevel="5" />
+        <Skill Name="Streetwise" Categories="Rogue" Base="20" PlusPerLevel="4" />
+        <Skill Name="Use and Recognize Poison" Categories="Rogue" Base="24;16" PlusPerLevel="4;4" >
+            <SkillBonus Source="SKILL:Holistic Medicine" Bonus="4;4" />
+        </Skill>
+        <Skill Name="Ventriloquism" Categories="Rogue" Base="16" PlusPerLevel="4" />
+        <!-- Science Skills -->
+        <TODO Science="true" />
+        <!-- Scholar;Technical;Noble Skills -->
+        <TODO ScholorTechnicalNoble="true" />
+        <!-- Weapon Proficiencies -->
+        <TODO WeaponProficiencies="true" />
+        <!-- Wilderness Skills -->
+        <Skill Name="Boat Building" Categories="Wilderness" Base="25" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Carpentry" Bonus="5" />
+        </Skill>
+        <Skill Name="Carpentry"                  Categories="Wilderness" Base="25" PlusPerLevel="5" />
+        <Skill Name="Dowsing"                    Categories="Wilderness" Base="20" PlusPerLevel="5" />
+        <Skill Name="Identify Plants and Fruits" Categories="Wilderness" Base="25" PlusPerLevel="5" />
+        <Skill Name="Land Navigation"            Categories="Wilderness" Base="30" PlusPerLevel="4" />
+        <Skill Name="Preserve Food"              Categories="Wilderness" Base="30" PlusPerLevel="5" >
+            <SkillBonus Source="SKILL:Holistic Medicine" Bonus="10" />
+        </Skill>
+        <Skill Name="Skin and Prepare Animal Hides" Categories="Wilderness" Base="30"    PlusPerLevel="5" />
+        <Skill Name="Track and Trap Animals"        Categories="Wilderness" Base="20;30" PlusPerLevel="5;5" />
+        <Skill Name="Wilderness Survival"           Categories="Wilderness" Base="30"    PlusPerLevel="5" />
+    </SkillList>
+</Skills>

@@ -1,0 +1,11 @@
+<Psionics>
+	<PsionicCategories>
+		<Category Name="Physical" />
+		<Category Name="Healing" />
+		<Category Name="Sensative" />
+		<Category Name="Super" />
+	</PsionicCategories>
+	<PsionicAbilities>
+		<TODO Abilities="True" />
+	</PsionicAbilities>
+</Psionics>

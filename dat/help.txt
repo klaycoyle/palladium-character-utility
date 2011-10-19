@@ -1,0 +1,9 @@
+Welcome to the Palladium Game Utility help dialog! If you've gotten
+this far, you obviously understand what a command line is, and have
+successfully used the "--help" command. Apart from "--help", there
+are a few other commands. Commands are case sensative.
+
+Command     Command Name    Description
+-v          Verbose Mode    Talk to the user a lot more.
+-cl         Command Line    Use the Command Line Interface, no GUI.
+-f=[FILE]   File Equals     Attempt to load the character on startup.

@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<RaceList>
+    <Race Name="Human" Psionics="true" PPE="2d6" IQ="3d6" ME="3d6" MA="3d6" PS="3d6" PP="3d6" PE="3d6" PB="3d6" SPD="3d6" >
+        <OCC Priority="Minimum" Special="Any" Allowed="true" />
+    </Race>
+    <Race Name="Elf" Psionics="true" PPE="5d6" SDC="10" IQ="3d6+1" ME="3d6" MA="2d6" PS="3d6" PP="4d6" PE="3d6" PB="5d6" SPD="3d6" Nightvision="60" >
+            <OCC Priority="Minimum" Special="Any" Allowed="true" />
+    </Race>
+    <Race Name="Dwarf" Psionics="true" PPE="3d6" SDC="15" IQ="3d6" ME="3d6" MA="2d6" PS="4d6+6" PP="3d6" PE="4d6" PB="2d6+2" SPD="2d6" DiggingSPD="1d6" Nightvision="90" >
+            <OCC Priority="Minimum" Special="Any"    Allowed="true"  />
+            <OCC Priority="Maximum" Category="Magic" Allowed="false" />
+            <SkillBonuses Value="+5%" SkillCategories="Military" Skills="General Repair;Recognize Weapon Quality;Masonry;Carpentry;Rope Works;Sculpting;Locate Secret Compartments/Doors;Detect Concealment;Basic Math;Land Navigation" />
+            <AutomaticSkill Name="Dwarven Underground Tunneling"          />
+            <AutomaticSkill Name="Dwarven Underground Architecture"       />
+            <AutomaticSkill Name="Dwarven Underground Sense of Direction" />
+            <AutomaticSkill Name="Field Armorer" Bonus="+10%"             />
+            <AutomaticSkill Name="Gemology"      Bonus="+10%"             />
+            <SaveModifier Type="Magic"         Save="+1" />
+            <SaveModifier Type="Possession"    Save="+2" />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+    </Race>
+    <Race Name="Gnome" Psionics="false" PPE="4d6" IQ="3d6" ME="1d6+6" MA="3d6+4" PS="1d6+4" PP="4d6" PE="3d6+6" PB="4d6" SPD="2d6" DiggingSPD="1d6" Nightvision="90" >
+            <OCC Priority="Minimum" Special="Any"          Allowed="true"  />
+            <OCC Priority="Medium"  Category="Men of Arms" Allowed="false" />
+            <OCC Priority="Medium"  Category="Psionic"     Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Ranger"     Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Mercenary"  Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Soldier"    Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Thief"      Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Assassin"   Allowed="true"  />
+            <SkillBonuses Value="+10%" Skills="Prowl" />
+            <SkillBonuses Value="+5%"  Skills="Surveillance;Intelligence;General Repair;Masonry;Carpentry;Rope Works;Locate Secret Compartments/Doors;Land Navigation" />
+            <AutomaticSkill Name="Gnomish Underground Tunneling"          />
+            <AutomaticSkill Name="Gnomish Underground Architecture"       />
+            <AutomaticSkill Name="Gnomish Underground Sense of Direction" />
+            <SaveModifier Type="Poison"  Save="+1" />
+            <SaveModifier Type="Disease" Save="+1" />
+    </Race>
+    <Race Name="Troglodyte" Psionics="false" PPE="3d6" SDC="10" IQ="2d6" ME="2d6" MA="3d6" PS="4d6+4" PP="3d6+6" PE="3d6" PB="2d6" SPD="6d6" DiggingSPD="3d6" Nightvision="600" Dayvision="30" HorrorFactor="13" >
+            <OCC Priority="Minimum" Special="Any"         Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Mercenary" Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Soldier"   Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Thief"     Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Assassin"  Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Monk"      Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Vagabond"  Allowed="true"  />
+            <AutomaticSkill Name="Troglodyte Underground Tunneling"          />
+            <AutomaticSkill Name="Troglodyte Underground Architecture"       />
+            <AutomaticSkill Name="Troglodyte Underground Sense of Direction" />
+            <SaveModifier Type="Poison"        Save="+2" />
+            <SaveModifier Type="Disease"       Save="+2" />
+            <SaveModifier Type="Horror Factor" Save="+1" />
+            <Combat Initiative="+1" Attacks="+1" >
+                <NaturalAttack Name="Retractable Claws" Damage="1d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"              Damage="2d4" StrengthBonus="false" />
+            </Combat>
+    </Race>
+    <Race Name="Kobold" Psionics="true" PPE="4d6" SDC="5" IQ="3d6" ME="2d6" MA="3d6" PS="3d6+3" PP="3d6" PE="3d6" PB="1d6+6" SPD="3d6" DiggingSPD="1d6" Nightvision="400" Dayvision="40" >
+            <OCC Priority="Minimum" Special="Any"           Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Long Bowman" Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Knight"      Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Palladin"    Allowed="false" />
+            <SkillBonuses Value="+10%" Skills="Recognize Weapon Quality;Art;Gemology" />
+            <AutomaticSkill Name="Kobold Underground Tunneling"          />
+            <AutomaticSkill Name="Kobold Underground Architecture"       />
+            <AutomaticSkill Name="Kobold Underground Sense of Direction" />
+            <AutomaticSkill Name="Field Armorer" Bonus="+10%"            />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+            <Combat Initiative="+1" />
+    </Race>
+    <Race Name="Goblin" Psionics="true" PPE="6d6" SDC="5" IQ="2d6" ME="3d6" MA="2d6" PS="3d6" PP="3d6+6" PE="3d6" PB="2d6" SPD="3d6" DiggingSPD="1d6" Nightvision="90" >
+            <OCC Priority="Minimum" Special="Any"                  Allowed="false" />
+            <OCC Priority="Maximum" Category="Psionic"             Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Assassin"           Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Thief"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Mercenary"          Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Soldier"            Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Priest of Darkness" Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Witch"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Vagabond"           Allowed="true"  />
+            <OCC Priority="Maximum" RCCName="Goblin Cobbler"       Allowed="true"  />
+            <AutomaticSkill Name="Goblin Underground Tunneling"          />
+            <AutomaticSkill Name="Goblin Underground Architecture"       />
+            <AutomaticSkill Name="Goblin Underground Sense of Direction" />
+            <SaveModifier Type="Faerie Magic"  Save="+1" />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+    </Race>
+    <Race Name="Hob-Goblin" Psionics="false" PPE="4d6" IQ="2d6" ME="3d6+6" MA="2d6" PS="3d6" PP="3d6" PE="3d6" PB="2d6" SPD="3d6" DiggingSPD="1d4" Nightvision="40" >
+            <OCC Priority="Minimum" Special="Any"                  Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Assassin"           Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Thief"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Mercenary"          Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Soldier"            Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Priest of Darkness" Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Witch"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Vagabond"           Allowed="true"  />
+            <AutomaticSkill Name="Hob-Goblin Underground Tunneling"          />
+            <AutomaticSkill Name="Hob-Goblin Underground Architecture"       />
+            <AutomaticSkill Name="Hob-Goblin Underground Sense of Direction" />
+            <SaveModifier Type="Faerie Magic"  Save="+1" />
+            <SaveModifier Type="Psionics"      Save="+1" />
+            <SaveModifier Type="Possession"    Save="+2" />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+            <Combat Initiative="+1" Dodge="+1" />
+            <Special DisplayArea="Combat" Text="Suffers only half penalties from blindess." />
+    </Race>
+    <Race Name="Orc" Psionics="false" PPE="2d6" SDC="10" IQ="2d6" ME="2d6" MA="3d6" PS="3d6+8" PP="3d6" PE="3d6+2" PB="2d6" SPD="3d6" Nightvision="40" >
+            <OCC Priority="Minimum" Special="Any"                  Allowed="false" />
+            <OCC Priority="Maximum" ClassName="Assassin"           Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Thief"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Mercenary"          Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Soldier"            Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Priest of Darkness" Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Witch"              Allowed="true"  />
+            <OCC Priority="Maximum" ClassName="Vagabond"           Allowed="true"  />
+            <AutomaticSkill Name="Orcish Track Blood Scent"         />
+            <AutomaticSkill Name="Orcish Recognize Scent of Others" />
+            <SaveModifier Type="Horror Factor" Save="+3" />
+            <Combat Roll="+1" >
+                <NaturalAttack Name="Clawed Hands" Damage="1d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"         Damage="1d6" StrengthBonus="false" />
+            </Combat>
+    </Race>
+    <Race Name="Ogre" Psionics="false" PPE="3d6" SDC="20" IQ="3d6" ME="3d6" MA="2d6" PS="4d6+4" PP="3d6" PE="3d6+6" PB="2d6" SPD="3d6" Nightvision="40" HorrorFactor="10" Giant="true" >
+            <OCC Priority="Minimum" Special="Any"      Allowed="true"  />
+            <OCC Priority="Maximum" Category="Psionic" Allowed="false" />
+            <SkillBonuses Value="+15%" Skills="Recognize Weapon Quality"  />
+            <SkillBonuses Value="+10%" Skills="Falconry;Animal Husbandry" />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+            <Combat>
+                <NaturalAttack Name="Clawed Hands" Damage="2d4" StrengthBonus="true"  />
+                <NaturalAttack Name="Kick"         Damage="3d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"         Damage="2d4" StrengthBonus="false" />
+            </Combat>
+    </Race>
+    <Race Name="Troll" Psionics="false" PPE="3d6" SDC="40" IQ="3d6" ME="2d6" MA="2d6" PS="4d6+10" PP="4d6" PE="3d6+6" PB="1d6+4" SPD="2d6" Nightvision="60" HorrorFactor="12" Giant="true" >
+            <OCC Priority="Minimum" Special="Any"      Allowed="true"  />
+            <OCC Priority="Maximum" Category="Psionic" Allowed="false" />
+            <AutomaticSkill Name="Climbing" Bonus="+35%/+30%" />
+            <AutomaticSkill Name="Swimming" Bonus="+20%"      />
+            <SaveModifier Type="Horror Factor" Save="+3" />
+            <Combat Attacks="+1" >
+                <NaturalAttack Name="Clawed Hands" Damage="2d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Kick"         Damage="3d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"         Damage="2d4" StrengthBonus="false" />
+            </Combat>
+    </Race>
+    <Race Name="Changeling" Psionics="true" PPE="5d6" IQ="3d6" ME="4d6+6" MA="4d6" PS="3d6" PP="3d6" PE="2d6" PB="2d6" SPD="2d6" HorrorFactor="10" >
+            <OCC Priority="Minimum" Special="Any" Allowed="true" />
+            <SkillBonuses Value="+5%" Skills="Disguise" />
+            <SaveModifier Type="Horror Factor"     Save="+2" />
+            <SaveModifier Type="Mind Control"      Save="+2" />
+            <SaveModifier Type="Telepathic Probes" Save="+2" />
+            <Special DisplayArea="Abilities" Text="Natural Shape Changing" />
+    </Race>
+    <Race Name="Wolfen" Psionics="true" PPE="3d6" SDC="20" IQ="3d6" ME="3d6" MA="2d6" PS="4d6+1" PP="3d6" PE="3d6" PB="3d6" SPD="4d6" Nightvision="40" HorrorFactor="12" Giant="true" >
+            <OCC Priority="Minimum" Special="Any" Allowed="true" />
+            <AutomaticSkill Name="Wolfen Track Blood Scent"         />
+            <AutomaticSkill Name="Wolfen Recognize Scent of Others" />
+            <SaveModifier Type="Horror Factor" Save="+2" />
+            <Combat Initiative="+1" >
+                <NaturalAttack Name="Punch"       Damage="2d4" StrengthBonus="true"  />
+                <NaturalAttack Name="Claw Strike" Damage="2d4" StrengthBonus="true"  />
+                <NaturalAttack Name="Kick"        Damage="3d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"        Damage="2d4" StrengthBonus="false" />
+            </Combat>
+            <Special DisplayArea="Abilities" Text="Keen hearing, equal to that of a dog." />
+    </Race>
+    <Race Name="Coyle" Psionics="true" PPE="3d6" SDC="10" IQ="3d6" ME="3d6" MA="3d6" PS="3d6+1" PP="4d6+1" PE="3d6" PB="3d6" SPD="3d6" Nightvision="40" HorrorFactor="11" >
+            <OCC Priority="Minimum" Special="Any" Allowed="true" />
+            <AutomaticSkill Name="Coyle Track Blood Scent"         />
+            <AutomaticSkill Name="Coyle Recognize Scent of Others" />
+            <SaveModifier Type="Horror Factor" Save="+1" />
+            <Combat Initiative="+1" >
+                <NaturalAttack Name="Punch"       Damage="1d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Claw Strike" Damage="1d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Kick"        Damage="2d6" StrengthBonus="true"  />
+                <NaturalAttack Name="Bite"        Damage="1d6" StrengthBonus="false" />
+            </Combat>
+            <Special DisplayArea="Abilities" Text="Keen hearing, equal to that of a dog." />
+    </Race>
+</RaceList>
