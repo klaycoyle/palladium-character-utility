@@ -20,10 +20,15 @@ import net.theoks.pcu.model.Module;
  * @author Cedrick Cooke
  */
 public class PCU {
-	private static final String VERBOSE = "-v", COMMAND_LINE_INTERFACE = "-cl",
-			HELP = "--help", FILE = "-f=";
-	private static boolean verbose = false, commandLineInterface = false,
-			help = false;
+	private static final String VERBOSE = "-v";
+	private static final String COMMAND_LINE_INTERFACE = "-cl";
+	private static final String HELP = "--help";
+	private static final String FILE = "-f=";
+		
+	private static boolean verbose = false;
+	private static boolean commandLineInterface = false;
+	private static boolean help = false;
+	
 	private static String file = null;
 	public static final String dataPath = System.getProperty("user.dir")
 			+ "/dat/";
